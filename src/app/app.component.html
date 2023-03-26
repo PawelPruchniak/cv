@@ -1,0 +1,148 @@
+<div class="cv-app">
+  <mat-toolbar id="toolbar">
+    <div id="toolbar-home">
+      <button (click)="onClickScroll('title')" mat-icon-button>
+        <mat-icon>home</mat-icon>
+      </button>
+    </div>
+    <div id="toolbar-list">
+      <button (click)="onClickScroll('skills')" mat-icon-button>
+      <span>
+        <strong>Skills</strong>
+      </span>
+      </button>
+      <button (click)="onClickScroll('skills')" mat-icon-button>
+      <span>
+        <strong>Experience</strong>
+      </span>
+      </button>
+      <button (click)="onClickScroll('skills')" mat-icon-button>
+      <span>
+      <strong>Education</strong>
+      </span>
+      </button>
+      <button (click)="onClickScroll('skills')" mat-icon-button>
+      <span>
+        <strong>Contact</strong>
+      </span>
+      </button>
+    </div>
+  </mat-toolbar>
+  <div id="title">
+    <div id="title-text">
+      <span id="title-text-1">
+        Hello, my name is
+      </span>
+      <span id="title-text-2">
+        Paweł Pruchniak
+      </span>
+      <span id="title-text-3">
+        I am <strong> software developer </strong>
+      </span>
+      <span id="title-text-4">
+        I'm a software developer currently living in Warsaw, Poland.
+      </span>
+    </div>
+    <div id="title-photo">
+    </div>
+  </div>
+  <div id="skills">
+    <div id="skills-header">
+      <span>
+          <strong>Skills</strong>
+      </span>
+    </div>
+    <mat-card id="skills-card">
+      <mat-card-content>
+        <mat-card-content id="content">
+          <div id="skills-core">
+            <div class="skills-icon">
+              <mat-icon>computer</mat-icon>
+            </div>
+            <span class="title">
+              <strong>Core</strong>
+            </span>
+            <div class="skills-list column">
+              <mat-list>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Java 8/11/17'}}</div>
+                  <div mat-line class="time-info"> {{'2 yr 1 mos'}} </div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Angular & Typescript'}}</div>
+                  <div mat-line class="time-info"> {{'10 mos'}} </div>
+                </mat-list-item>
+              </mat-list>
+            </div>
+          </div>
+          <div id="skills-tools">
+            <div class="skills-icon">
+              <mat-icon>category</mat-icon>
+            </div>
+            <span class="title">
+              <strong>Frameworks & Tools</strong>
+            </span>
+            <div class="skills-list column">
+              <mat-list>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Spring framework'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Spring JDBC'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Hibernate'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Relational Databases'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'JUnit'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Mockito'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Maven'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Liquibase'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Docker'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Jenkins'}}</div>
+                </mat-list-item>
+              </mat-list>
+            </div>
+          </div>
+          <div id="skills-soft">
+            <div class="skills-icon">
+              <mat-icon>group</mat-icon>
+            </div>
+            <span class="title">
+              <strong>Soft skills</strong>
+            </span>
+            <div class="skills-list column">
+              <mat-list>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Polish - native'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'English - intermediate'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Great work organisation'}}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div mat-line class="skills-name">{{'Working with business teams'}}</div>
+                </mat-list-item>
+              </mat-list>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

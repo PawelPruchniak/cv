@@ -1,0 +1,216 @@
+@import '../variables.scss';
+
+.cv-app {
+  height: 100%;
+  line-height: 1;
+
+  //color: $primary;
+  //font-size: 56px;
+  //font-family: 'Baloo Paaji', cursive;
+}
+
+#toolbar {
+  height: 50px;
+  position: fixed;
+  z-index: 2;
+  background: linear-gradient(to bottom, #FFF 98%, $primary 2%);
+  color: $primary;
+
+  #toolbar-home {
+    display: flex;
+    width: calc(10%);
+  }
+
+  #toolbar-list {
+    width: calc(90%);
+    display: flex;
+    column-gap: 30px;
+    justify-content: flex-end;
+    margin-left: 16px;
+
+    > button {
+      width: auto;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+}
+
+#title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  height: 400px;
+  background-color: #FFF;
+  //background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+  //background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+  padding: 100px 16px 32px 16px;
+
+  #title-text {
+    width: calc(55%);
+    margin-left: calc(10%);
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    line-height: 1;
+
+    #title-text-1 {
+      color: black;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      letter-spacing: normal;
+    }
+
+    #title-text-2 {
+      margin-top: 8px;
+      color: $primary;
+      font-size: 66px;
+      font-family: 'Baloo Paaji', cursive;
+    }
+
+    #title-text-3 {
+      margin-top: 4px;
+      word-wrap: break-word;
+      font-size: 36px;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    #title-text-4 {
+      margin-top: 100px;
+      word-wrap: break-word;
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+
+  #title-photo {
+    width: calc(29%);
+    min-width: 300px;
+    margin: 0 calc(3%) 0 calc(3%);
+    //background: wheat;
+  }
+}
+
+#skills {
+  height: 800px;
+  background: linear-gradient(to bottom, $primary 40%, #FFF 40%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+
+  #skills-header {
+    padding-top: 80px;
+    font-size: 36px;
+    font-family: "Open Sans", sans-serif;
+    color: #FFF;
+    text-align: center;
+  }
+
+  #skills-card {
+    height: auto;
+    width: calc(80%);
+    margin-top: 32px;
+    padding: 36px 0 100px 0;
+
+    #content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+
+      #skills-core {
+        width: calc(33%);
+      }
+
+      #skills-tools {
+        width: calc(33%);
+      }
+
+      #skills-soft {
+        width: calc(33%);
+      }
+    }
+
+    .skills-icon {
+      margin-bottom: 12px;
+      color: $primary;
+
+      > mat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 50px;
+      }
+    }
+
+    .title {
+      font-size: 32px;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .skills-list {
+      margin-top: 16px;
+      font-size: 18px;
+
+      > mat-list mat-list-item {
+        height: auto;
+        margin-bottom: 16px;
+      }
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+    }
+
+    .skills-name {
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      height: 20px;
+    }
+
+    .time-info {
+      color: grey;
+      font-size: 12px;
+      font-family: "Open Sans", sans-serif;
+      height: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #content {
+    display: flex;
+    flex-direction: column !important;
+    row-gap: 100px;
+
+    #skills-core {
+      width: calc(100%) !important;
+    }
+
+    #skills-tools {
+      width: calc(100%) !important;
+    }
+
+    #skills-soft {
+      width: calc(100%) !important;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #toolbar-list {
+    justify-content: space-evenly !important;
+  }
+
+  #title-text {
+    width: calc(80%) !important;
+    margin-left: unset !important;
+  }
+}
+
+
+
+
+
