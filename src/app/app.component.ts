@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {ViewportScroller} from "@angular/common";
+import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'cv-root',
@@ -9,8 +9,7 @@ import {ViewportScroller} from "@angular/common";
 export class AppComponent {
   title = 'savings-io-frontend';
 
-  constructor(private viewportScroller: ViewportScroller) {
-  }
+  constructor(private viewportScroller: ViewportScroller) {}
 
   onClickScroll(elementId: string) {
     this.viewportScroller.scrollToAnchor(elementId);

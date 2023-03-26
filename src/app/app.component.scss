@@ -13,7 +13,7 @@
   height: 50px;
   position: fixed;
   z-index: 2;
-  background: linear-gradient(to bottom, #FFF 98%, $primary 2%);
+  background: linear-gradient(to bottom, #fff 98%, $primary 2%);
   color: $primary;
 
   #toolbar-home {
@@ -30,7 +30,7 @@
 
     > button {
       width: auto;
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Open Sans', sans-serif;
     }
   }
 }
@@ -41,7 +41,7 @@
   justify-content: center;
 
   height: 400px;
-  background-color: #FFF;
+  background-color: #fff;
   //background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
   //background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
   padding: 100px 16px 32px 16px;
@@ -56,7 +56,7 @@
 
     #title-text-1 {
       color: black;
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 18px;
       letter-spacing: normal;
     }
@@ -72,14 +72,14 @@
       margin-top: 4px;
       word-wrap: break-word;
       font-size: 36px;
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Open Sans', sans-serif;
     }
 
     #title-text-4 {
       margin-top: 100px;
       word-wrap: break-word;
       font-size: 16px;
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Open Sans', sans-serif;
     }
   }
 
@@ -93,7 +93,7 @@
 
 #skills {
   height: 800px;
-  background: linear-gradient(to bottom, $primary 40%, #FFF 40%);
+  background: linear-gradient(to bottom, $primary 40%, #fff 40%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,8 +102,8 @@
   #skills-header {
     padding-top: 80px;
     font-size: 36px;
-    font-family: "Open Sans", sans-serif;
-    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
     text-align: center;
   }
 
@@ -145,7 +145,7 @@
 
     .title {
       font-size: 32px;
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Open Sans', sans-serif;
     }
 
     .skills-list {
@@ -166,14 +166,14 @@
 
     .skills-name {
       font-size: 18px;
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Open Sans', sans-serif;
       height: 20px;
     }
 
     .time-info {
       color: grey;
       font-size: 12px;
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Open Sans', sans-serif;
       height: 14px;
     }
   }
@@ -209,8 +209,3 @@
     margin-left: unset !important;
   }
 }
-
-
-
-
-
