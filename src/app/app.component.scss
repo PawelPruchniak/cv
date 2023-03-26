@@ -22,11 +22,11 @@
   }
 
   #toolbar-list {
-    width: calc(90%);
+    width: calc(90% - 32px);
     display: flex;
     column-gap: 30px;
     justify-content: flex-end;
-    margin-left: 16px;
+    margin-left: 32px;
 
     > button {
       width: auto;
@@ -181,7 +181,7 @@
   }
 }
 
-#experience{
+#experience {
   height: 80px;
   background-color: #FFF;
 }
@@ -207,12 +207,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  #toolbar {
-    padding: 0 8px 0 0 !important;
-  }
-
   #toolbar-list {
     justify-content: space-evenly !important;
+    column-gap: 16px!important;
   }
 
   #title-text {
