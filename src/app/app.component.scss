@@ -183,7 +183,7 @@
 
 #experience {
   height: 80px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 770px) {
@@ -209,7 +209,7 @@
 @media screen and (max-width: 600px) {
   #toolbar-list {
     justify-content: space-evenly !important;
-    column-gap: 16px!important;
+    column-gap: 16px !important;
   }
 
   #title-text {
