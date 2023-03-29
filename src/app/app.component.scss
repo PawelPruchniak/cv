@@ -115,7 +115,7 @@
     margin-top: 32px;
     padding: 36px 0 100px 0;
 
-    #content {
+    #skills-content {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -186,8 +186,76 @@
   background-color: #fff;
 }
 
+#contact {
+  height: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+
+  #contact-header {
+    padding-top: 80px;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    color: $primary;
+    text-align: center;
+  }
+
+  #contact-card {
+    height: auto;
+    min-width: 600px;
+    width: calc(50%);
+    margin-top: 8px;
+    padding: 24px 0 24px 0;
+
+    #contact-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+
+      #contact-email {
+        width: calc(33%);
+      }
+
+      #contact-linkedin {
+        width: calc(33%);
+      }
+
+      #contact-github {
+        width: calc(33%);
+      }
+    }
+
+    .contact-icon {
+      margin-bottom: 8px;
+      color: $primary;
+
+      > mat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 50px;
+      }
+    }
+
+    .contact-text {
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+}
+
+.divider {
+  width: 30%;
+  background: $primary;
+  margin-top: 8px;
+}
+
+// media screen
+
 @media screen and (max-width: 770px) {
-  #content {
+  #skills-content {
     display: flex;
     flex-direction: column !important;
     row-gap: 32px;
@@ -201,6 +269,32 @@
     }
 
     #skills-soft {
+      width: calc(100%) !important;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #contact-card {
+    min-width: unset !important;
+    width: 80% !important;
+  }
+
+  #contact-content {
+    display: flex !important;
+    flex-direction: column !important;
+    row-gap: 16px;
+    align-items: center !important;
+
+    #contact-email {
+      width: calc(100%) !important;
+    }
+
+    #contact-linkedin {
+      width: calc(100%) !important;
+    }
+
+    #contact-github {
       width: calc(100%) !important;
     }
   }
