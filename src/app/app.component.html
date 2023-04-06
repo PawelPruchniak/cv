@@ -11,7 +11,7 @@
           <strong>Skills</strong>
         </span>
       </button>
-      <button (click)="onClickScroll('skills')" mat-icon-button>
+      <button (click)="onClickScroll('experience')" mat-icon-button>
         <span>
           <strong>Experience</strong>
         </span>
@@ -88,6 +88,12 @@
                   <div class="skills-name" mat-line>{{ 'Relational Databases' }}</div>
                 </mat-list-item>
                 <mat-list-item>
+                  <div class="skills-name" mat-line>{{ 'Liquibase' }}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div class="skills-name" mat-line>{{ 'Vavr' }}</div>
+                </mat-list-item>
+                <mat-list-item>
                   <div class="skills-name" mat-line>{{ 'JUnit' }}</div>
                 </mat-list-item>
                 <mat-list-item>
@@ -95,9 +101,6 @@
                 </mat-list-item>
                 <mat-list-item>
                   <div class="skills-name" mat-line>{{ 'Maven' }}</div>
-                </mat-list-item>
-                <mat-list-item>
-                  <div class="skills-name" mat-line>{{ 'Liquibase' }}</div>
                 </mat-list-item>
                 <mat-list-item>
                   <div class="skills-name" mat-line>{{ 'Docker' }}</div>
@@ -136,10 +139,99 @@
       </mat-card-content>
     </mat-card>
   </div>
-  <div id="experience"></div>
+  <div id="experience">
+    <div class="section-header">
+      <span>
+        <strong>Experience</strong>
+      </span>
+    </div>
+    <mat-divider class="divider"></mat-divider>
+    <div id="experience-body">
+      <mat-card class="experience-card">
+        <mat-card-content>
+          <div class="experience-card-upper">
+            <div class="experience-card-logo">
+              <img alt="logo" height="46" ngSrc="assets/psi-logo.png" width="46" />
+            </div>
+            <div class="experience-card-title">
+              <mat-card-title>
+                <span> PSI Polska sp. z.o.o. </span>
+              </mat-card-title>
+              <mat-card-subtitle> April 2021 - February 2021 (11 mos)</mat-card-subtitle>
+            </div>
+          </div>
+          <mat-card-content class="experience-card-content">
+            <div class="experience-position">
+              <span>
+                <strong>Junior Software Developer</strong>
+              </span>
+            </div>
+
+            <span
+              ><strong>Description & Responsibilities:</strong>
+              <mat-card-subtitle
+                >I was responsible for the development and maintenance of the production management system. I worked in
+                a scrum team, in an agile methodology. The software I developed had to be efficient and well tested. I
+                also took care of the efficiency of our software delivery, through CI/CD tools.</mat-card-subtitle
+              >
+            </span>
+
+            <span
+              ><strong>Technologies & Tools:</strong>
+              <mat-card-subtitle
+                >Java8/11, JavaEE, JUnit, Mockito, testcontainers, Docker, Jenkins, Oracle, MSSQL, PostgreSQL, Maven,
+                Git</mat-card-subtitle
+              >
+            </span>
+          </mat-card-content>
+        </mat-card-content>
+      </mat-card>
+      <div class="experience-arrow">
+        <mat-icon></mat-icon>
+      </div>
+      <mat-card class="experience-card">
+        <mat-card-content>
+          <div class="experience-card-upper">
+            <div class="experience-card-logo">
+              <img alt="logo" height="46" ngSrc="assets/horus-logo.png" width="46" />
+            </div>
+            <div class="experience-card-title">
+              <mat-card-title>
+                <span> Horus </span>
+              </mat-card-title>
+              <mat-card-subtitle> February 2021 - Present ({{ getHorusDuration }})</mat-card-subtitle>
+            </div>
+          </div>
+          <mat-card-content class="experience-card-content">
+            <div class="experience-position">
+              <span><strong>Java Developer</strong> </span>
+            </div>
+
+            <span
+              ><strong>Description & Responsibilities:</strong>
+              <mat-card-subtitle
+                >I am responsible for the architectural design, implementation and development of software for
+                telecommunications companies. We work in an agile methodology. In software development, I implement both
+                backend and frontend part (with Typescript & Angular). I work closely with business teams in order to
+                best meet their needs.</mat-card-subtitle
+              >
+            </span>
+
+            <span
+              ><strong>Technologies & Tools:</strong>
+              <mat-card-subtitle
+                >Java11/17, Spring, SpringBoot, SpringJDBC, Vavr, JUnit, Mockito, Oracle, Maven, Typescript, Angular,
+                Git</mat-card-subtitle
+              >
+            </span>
+          </mat-card-content>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
   <div id="education"></div>
   <div id="contact">
-    <div id="contact-header">
+    <div class="section-header">
       <span>
         <strong>Contact</strong>
       </span>

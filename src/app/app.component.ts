@@ -22,6 +22,10 @@ export class AppComponent {
     return this.getTranslatedDuration(moment('2022-06-01'));
   }
 
+  get getHorusDuration(): string {
+    return this.getTranslatedDuration(moment('2022-02-01'));
+  }
+
   private getTranslatedDuration(start: Moment): string {
     const duration = moment.duration(moment().diff(start));
     const years = Math.floor(duration.asMonths() / 12);
