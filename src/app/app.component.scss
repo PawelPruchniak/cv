@@ -20,6 +20,12 @@
   #toolbar-home {
     display: flex;
     width: calc(10%);
+
+    > button mat-icon {
+      width: 28px;
+      height: 28px;
+      font-size: 28px;
+    }
   }
 
   #toolbar-list {
@@ -27,11 +33,12 @@
     display: flex;
     column-gap: 30px;
     justify-content: flex-end;
-    margin-left: 32px;
+    margin-left: 24px;
 
     > button {
       width: auto;
       font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
     }
   }
 }
@@ -471,7 +478,7 @@
 @media screen and (max-width: 600px) {
   #toolbar-list {
     justify-content: space-evenly !important;
-    column-gap: 16px !important;
+    column-gap: 12px !important;
   }
 
   #title-text {
