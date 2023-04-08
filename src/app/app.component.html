@@ -16,7 +16,7 @@
           <strong>Experience</strong>
         </span>
       </button>
-      <button (click)="onClickScroll('skills')" mat-icon-button>
+      <button (click)="onClickScroll('education')" mat-icon-button>
         <span>
           <strong>Education</strong>
         </span>
@@ -229,7 +229,27 @@
       </mat-card>
     </div>
   </div>
-  <div id="education"></div>
+  <div id="education">
+    <div id="education-header">
+      <span>
+        <strong>Education</strong>
+      </span>
+    </div>
+    <mat-card id="education-card">
+      <mat-card-content id="education-content">
+        <div class="education-card-logo">
+          <img alt="logo" height="140" ngSrc="assets/uam-logo.png" width="120" />
+        </div>
+        <div id="education-card-title">
+          <mat-card-title>
+            <span> <strong>Adam Mickiewicz University in Poznań</strong> </span>
+          </mat-card-title>
+          <mat-card-title id="education-degree">Engineer's degree in Computer Science</mat-card-title>
+          <mat-card-subtitle id="education-time">October 2018 - February 2022</mat-card-subtitle>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
   <div id="contact">
     <div class="section-header">
       <span>

@@ -3,6 +3,7 @@
 .cv-app {
   height: 100%;
   line-height: 1;
+  background: #fff;
 
   //color: $primary;
   //font-size: 56px;
@@ -263,6 +264,58 @@
   }
 }
 
+#education {
+  min-height: 400px;
+  height: auto;
+  background: linear-gradient(to bottom, $primary 60%, #fff 60%);
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+
+  #education-header {
+    padding-top: 80px;
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+
+  #education-card {
+    height: auto;
+    width: calc(50%);
+    margin-top: 32px;
+    padding: 36px 0 32px 0;
+
+    #education-content {
+      display: flex;
+      justify-content: center;
+      font-family: 'Open Sans', sans-serif;
+
+      #education-card-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        > mat-card-title {
+          font-size: 28px;
+        }
+
+        #education-degree {
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+
+        #education-time {
+          font-size: 16px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
 #contact {
   height: auto;
   background: #fff;
@@ -370,6 +423,20 @@
     .experience-arrow {
       > mat-icon:before {
         content: 'arrow_downward' !important;
+      }
+    }
+  }
+
+  #education-card {
+    width: calc(80%) !important;
+
+    #education-content {
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+
+      #education-card-title {
+        row-gap: 8px !important;
       }
     }
   }
