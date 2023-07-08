@@ -15,6 +15,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { NgOptimizedImage } from '@angular/common';
+import { MatLineModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [AppComponent],
@@ -33,6 +34,7 @@ import { NgOptimizedImage } from '@angular/common';
     MatMenuModule,
     ScrollingModule,
     NgOptimizedImage,
+    MatLineModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

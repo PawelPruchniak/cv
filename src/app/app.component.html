@@ -1,4 +1,4 @@
-<div class="cv-app">
+<div class="cv-app" xmlns="http://www.w3.org/1999/html">
   <mat-toolbar id="toolbar">
     <div id="toolbar-home">
       <button (click)="onClickScroll('title')" mat-icon-button>
@@ -56,12 +56,20 @@
             <div class="skills-list column">
               <mat-list>
                 <mat-list-item>
-                  <div class="skills-name" mat-line>{{ 'Java 8/11/17' }}</div>
-                  <div class="time-info" mat-line>{{ getJavaDuration }}</div>
+                  <div class="skills-name" mat-line>
+                    <strong> {{ 'Java 8/11/17' }} </strong>
+                  </div>
+                  <div class="time-info" mat-line>
+                    <strong>{{ getJavaDuration }}</strong>
+                  </div>
                 </mat-list-item>
                 <mat-list-item>
-                  <div class="skills-name" mat-line>{{ 'Angular & Typescript' }}</div>
-                  <div class="time-info" mat-line>{{ getTypescriptDuration }}</div>
+                  <div class="skills-name" mat-line>
+                    <strong>{{ 'Angular & Typescript' }}</strong>
+                  </div>
+                  <div class="time-info" mat-line>
+                    <strong>{{ getTypescriptDuration }}</strong>
+                  </div>
                 </mat-list-item>
               </mat-list>
             </div>
@@ -175,13 +183,12 @@
                 also took care of the efficiency of our software delivery, through CI/CD tools.</mat-card-subtitle
               >
             </span>
-
+            <br />
             <span
               ><strong>Technologies & Tools:</strong>
-              <mat-card-subtitle
-                >Java8/11, JavaEE, JUnit, Mockito, testcontainers, Docker, Jenkins, Oracle, MSSQL, PostgreSQL, Maven,
-                Git</mat-card-subtitle
-              >
+              <mat-card-subtitle>{{
+                'Java8/11, &nbsp;JavaEE, &nbsp;JUnit, &nbsp;Mockito, &nbsp;testcontainers, &nbsp;Docker, &nbsp;Jenkins, &nbsp;Oracle, &nbsp;MSSQL, &nbsp;PostgreSQL, &nbsp;Maven, &nbsp; Git'
+              }}</mat-card-subtitle>
             </span>
           </mat-card-content>
         </mat-card-content>
@@ -216,13 +223,12 @@
                 best meet their needs.</mat-card-subtitle
               >
             </span>
-
+            <br />
             <span
               ><strong>Technologies & Tools:</strong>
-              <mat-card-subtitle
-                >Java11/17, Spring, SpringBoot, SpringJDBC, Vavr, JUnit, Mockito, Oracle, Maven, Typescript, Angular,
-                Git</mat-card-subtitle
-              >
+              <mat-card-subtitle>{{
+                'Java11/17, &nbsp;Spring, &nbsp;SpringBoot, &nbsp;SpringJDBC, &nbsp;Vavr, &nbsp;JUnit, &nbsp;Mockito, &nbsp;Oracle, &nbsp;Maven, &nbsp;Typescript, &nbsp;Angular, &nbsp;Git'
+              }}</mat-card-subtitle>
             </span>
           </mat-card-content>
         </mat-card-content>

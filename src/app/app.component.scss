@@ -177,14 +177,12 @@
     .skills-name {
       font-size: 18px;
       font-family: 'Open Sans', sans-serif;
-      height: 20px;
     }
 
     .time-info {
       color: grey;
-      font-size: 12px;
+      font-size: 14px;
       font-family: 'Open Sans', sans-serif;
-      height: 14px;
     }
   }
 }
@@ -240,12 +238,16 @@
 
       .experience-card-title {
         > mat-card-title {
-          font: 28px 'Open Sans', sans-serif;
+          font:
+            28px 'Open Sans',
+            sans-serif;
           margin: 0 !important;
         }
 
         > mat-card-subtitle {
-          font: 16px 'Open Sans', sans-serif;
+          font:
+            16px 'Open Sans',
+            sans-serif;
           margin: 0 !important;
         }
       }
@@ -253,14 +255,18 @@
 
     .experience-card-content {
       margin-top: 16px;
-      font: 18px 'Open Sans', sans-serif;
+      font:
+        18px 'Open Sans',
+        sans-serif;
 
       .experience-position {
         margin-bottom: 24px;
       }
 
       > span mat-card-subtitle {
-        font: 16px 'Open Sans', sans-serif;
+        font:
+          16px 'Open Sans',
+          sans-serif;
         margin-top: 0;
         color: #000000;
       }
