@@ -4,10 +4,6 @@
   height: 100%;
   line-height: 1;
   background: #fff;
-
-  //color: $primary;
-  //font-size: 56px;
-  //font-family: 'Baloo Paaji', cursive;
 }
 
 #toolbar {
@@ -51,8 +47,6 @@
   min-height: 400px;
   height: auto;
   background-color: #fff;
-  //background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
-  //background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
   padding: 100px 8px 32px 8px;
 
   #title-text {
@@ -66,7 +60,7 @@
     #title-text-1 {
       color: black;
       font-family: 'Open Sans', sans-serif;
-      font-size: 18px;
+      font-size: 20px;
       letter-spacing: normal;
     }
 
@@ -75,6 +69,7 @@
       color: $primary;
       font-size: 66px;
       font-family: 'Baloo Paaji', cursive;
+      letter-spacing: -2px;
     }
 
     #title-text-3 {
@@ -82,12 +77,13 @@
       word-wrap: break-word;
       font-size: 36px;
       font-family: 'Open Sans', sans-serif;
+      letter-spacing: -1px;
     }
 
     #title-text-4 {
       margin-top: 100px;
       word-wrap: break-word;
-      font-size: 16px;
+      font-size: 18px;
       font-family: 'Open Sans', sans-serif;
     }
   }
@@ -111,7 +107,7 @@
 
   #skills-header {
     padding-top: 80px;
-    font-size: 36px;
+    font-size: 44px;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     text-align: center;
@@ -261,6 +257,7 @@
 
       .experience-position {
         margin-bottom: 24px;
+        color: #3949ab;
       }
 
       > span mat-card-subtitle {
@@ -271,9 +268,6 @@
         color: #000000;
       }
     }
-  }
-
-  #experience-card-1 {
   }
 }
 
@@ -289,7 +283,7 @@
 
   #education-header {
     padding-top: 80px;
-    font-size: 36px;
+    font-size: 44px;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     text-align: center;
@@ -391,7 +385,7 @@
 
 .section-header {
   padding-top: 80px;
-  font-size: 36px;
+  font-size: 44px;
   font-family: 'Open Sans', sans-serif;
   color: $primary;
   text-align: center;
@@ -482,9 +476,15 @@
 }
 
 @media screen and (max-width: 600px) {
+  #toolbar-home {
+    display: none!important;
+  }
+
   #toolbar-list {
+    width: 100%!important;
+    margin-left: 0!important;
     justify-content: space-evenly !important;
-    column-gap: 12px !important;
+    column-gap: 4px !important;
   }
 
   #title-text {
