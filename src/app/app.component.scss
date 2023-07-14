@@ -323,6 +323,7 @@
 }
 
 #contact {
+  min-height: 360px;
   height: auto;
   background: #fff;
   display: flex;
@@ -396,8 +397,13 @@
   margin-top: 8px;
 }
 
-// media screen
+.footer {
+  height: 40px;
+  background: $primary;
+  margin-top: 16px;
+}
 
+// media screen
 @media screen and (max-width: 770px) {
   #skills-content {
     display: flex;
@@ -476,12 +482,12 @@
 
 @media screen and (max-width: 600px) {
   #toolbar-home {
-    display: none!important;
+    display: none !important;
   }
 
   #toolbar-list {
-    width: 100%!important;
-    margin-left: 0!important;
+    width: 100% !important;
+    margin-left: 0 !important;
     justify-content: space-evenly !important;
     column-gap: 4px !important;
   }
