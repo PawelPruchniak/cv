@@ -92,12 +92,11 @@
     width: calc(29%);
     min-width: 300px;
     margin: 0 calc(3%) 0 calc(3%);
-    //background: wheat;
   }
 }
 
 #skills {
-  min-height: 800px;
+  min-height: 860px;
   height: auto;
   background: linear-gradient(to bottom, $primary 40%, #fff 40%);
   display: flex;
@@ -160,7 +159,7 @@
 
       > mat-list mat-list-item {
         height: auto;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
       }
     }
 
@@ -184,6 +183,7 @@
 }
 
 #experience {
+  min-height: 900px;
   height: auto;
   background: #fff;
 
@@ -272,10 +272,9 @@
 }
 
 #education {
-  min-height: 400px;
+  min-height: 540px;
   height: auto;
-  background: linear-gradient(to bottom, $primary 60%, #fff 60%);
-  margin-top: 100px;
+  background: linear-gradient(to bottom, $primary 50%, #fff 50%);
   display: flex;
   flex-direction: column;
   align-items: center;
