@@ -1,15 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 import * as moment from 'moment';
 import { Moment } from 'moment';
+import { ParticlesConfig } from '../assets/particles-config';
+
+declare let particlesJS: any; // Required to be properly interpreted by TypeScript.
 
 @Component({
   selector: 'cv-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(private viewportScroller: ViewportScroller) {}
+
+  ngOnInit(): void {
+    particlesJS('particles-js-title', ParticlesConfig);
+    particlesJS('particles-js-experience', ParticlesConfig);
+  }
 
   onClickScroll(elementId: string) {
     this.viewportScroller.scrollToAnchor(elementId);
