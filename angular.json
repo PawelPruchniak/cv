@@ -18,6 +18,9 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "allowedCommonJsDependencies": [
+              "moment"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -26,7 +29,9 @@
               "src/styles.scss",
               "src/theme.scss"
             ],
-            "scripts": ["node_modules/particles.js/particles.js"]
+            "scripts": [
+              "node_modules/particles.js/particles.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,7 +99,9 @@
               "src/styles.scss",
               "src/theme.scss"
             ],
-            "scripts": ["node_modules/particles.js/particles.js"]
+            "scripts": [
+              "node_modules/particles.js/particles.js"
+            ]
           }
         }
       }

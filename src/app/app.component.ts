@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
   onClickScroll(elementId: string) {
     this.viewportScroller.scrollToAnchor(elementId);
   }
+
   get getJavaDuration(): string {
     return this.getTranslatedDuration(moment('2021-04-01'));
   }
