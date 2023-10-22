@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
-import * as moment from 'moment';
-import { Moment } from 'moment';
+import moment, { Moment } from "moment";
 import { ParticlesConfig } from '../assets/particles-config';
 
 declare let particlesJS: any; // Required to be properly interpreted by TypeScript.
