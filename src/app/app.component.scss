@@ -1,5 +1,7 @@
 @import '../variables.scss';
 
+// todo: maybe one day use "Urbanist" font
+
 .cv-app {
   height: 100%;
   line-height: 1;
@@ -174,6 +176,7 @@
     .skills-name {
       font-size: 18px;
       font-family: 'Open Sans', sans-serif;
+      white-space: normal;
     }
 
     .time-info {
@@ -366,6 +369,7 @@
       flex-direction: row;
       justify-content: center;
       text-align: center;
+      word-wrap: break-word;
 
       #contact-email {
         width: calc(33%);
@@ -417,9 +421,21 @@
 
 .footer {
   height: 40px;
-  width: 100%;
-  background: $primary;
+  width: calc(100% - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #fff;
+  border-top: 1px solid $primary;
+  color: $primary;
   margin-top: 16px;
+  padding: 0 32px;
+
+  .copyright {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+  }
 }
 
 #particles-js-title {
@@ -490,9 +506,16 @@
 }
 
 @media screen and (max-width: 640px) {
+  #skills-card {
+    padding: 0 !important;
+  }
+  #education-card {
+    padding: 0 !important;
+  }
   #contact-card {
     min-width: unset !important;
     width: 80% !important;
+    padding: 0 !important;
   }
 
   #contact-content {

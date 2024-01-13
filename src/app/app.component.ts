@@ -44,4 +44,8 @@ export class AppComponent {
     if (months > 0) result += ' ' + months + ' mos';
     return result;
   }
+
+  get getCurrentYear(): number {
+    return moment().year();
+  }
 }
