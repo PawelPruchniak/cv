@@ -87,6 +87,7 @@
       word-wrap: break-word;
       font-size: 18px;
       font-family: 'Open Sans', sans-serif;
+      line-height: 1.7 !important;
     }
   }
 
@@ -265,9 +266,9 @@
     }
 
     .experience-card-content {
-      margin-top: 16px;
+      margin-top: 8px;
       font:
-        18px 'Open Sans',
+        22px 'Open Sans',
         sans-serif;
 
       .experience-position {
@@ -275,11 +276,16 @@
         color: #3949ab;
       }
 
+      .experience-title {
+        font-size: 18px;
+      }
+
       > span mat-card-subtitle {
         font:
           16px 'Open Sans',
           sans-serif;
-        margin-top: 0;
+        line-height: 1.7 !important;
+        margin-top: 4px;
         color: #000000;
       }
     }
