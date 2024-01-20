@@ -559,7 +559,7 @@
 
 @media screen and (max-width: 600px) {
   #skills {
-    background: linear-gradient(to bottom, $primary 30%, #fff 30%);
+    background: linear-gradient(to bottom, $primary 30%, #fff 30%) !important;
   }
 
   #toolbar-home {
@@ -576,5 +576,13 @@
   #title-text {
     width: calc(90%) !important;
     margin-left: unset !important;
+  }
+
+  .divider-blue {
+    width: 50% !important;
+  }
+
+  .divider-white {
+    width: 50% !important;
   }
 }
