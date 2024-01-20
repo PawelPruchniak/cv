@@ -362,6 +362,13 @@
     text-align: center;
   }
 
+  .contact-body {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to bottom, #fff 35%, $primary 35% 75%, #fff 75%);
+    justify-content: center;
+  }
+
   #contact-card {
     height: auto;
     min-width: 600px;
@@ -551,6 +558,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  #skills {
+    background: linear-gradient(to bottom, $primary 30%, #fff 30%);
+  }
+
   #toolbar-home {
     display: none !important;
   }
