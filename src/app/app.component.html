@@ -1,27 +1,27 @@
 <div class="cv-app" xmlns="http://www.w3.org/1999/html">
   <mat-toolbar id="toolbar">
     <div id="toolbar-home">
-      <button (click)="onClickScroll('title')" mat-icon-button>
+      <button (click)="onClickScroll('title')" mat-fab color="primary">
         <mat-icon>home</mat-icon>
       </button>
     </div>
     <div id="toolbar-list">
-      <button (click)="onClickScroll('skills')" mat-icon-button>
+      <button (click)="onClickScroll('skills')" mat-button color="primary">
         <span>
           <strong>Skills</strong>
         </span>
       </button>
-      <button (click)="onClickScroll('experience')" mat-icon-button>
+      <button (click)="onClickScroll('experience')" mat-button color="primary">
         <span>
           <strong>Experience</strong>
         </span>
       </button>
-      <button (click)="onClickScroll('education')" mat-icon-button>
+      <button (click)="onClickScroll('education')" mat-button color="primary">
         <span>
           <strong>Education</strong>
         </span>
       </button>
-      <button (click)="onClickScroll('contact')" mat-icon-button>
+      <button (click)="onClickScroll('contact')" mat-fab color="primary" id="contact-button">
         <span>
           <strong>Contact</strong>
         </span>
@@ -86,7 +86,7 @@
             <div class="skills-list column">
               <mat-list>
                 <mat-list-item>
-                  <div class="skills-name" mat-line>{{ 'Spring framework' }}</div>
+                  <div class="skills-name" mat-line>{{ 'Spring Framework' }}</div>
                 </mat-list-item>
                 <mat-list-item>
                   <div class="skills-name" mat-line>{{ 'Spring JDBC' }}</div>
@@ -104,10 +104,7 @@
                   <div class="skills-name" mat-line>{{ 'Vavr' }}</div>
                 </mat-list-item>
                 <mat-list-item>
-                  <div class="skills-name" mat-line>{{ 'JUnit' }}</div>
-                </mat-list-item>
-                <mat-list-item>
-                  <div class="skills-name" mat-line>{{ 'Mockito' }}</div>
+                  <div class="skills-name" mat-line>{{ 'JUnit && Mockito' }}</div>
                 </mat-list-item>
                 <mat-list-item>
                   <div class="skills-name" mat-line>{{ 'Maven' }}</div>
@@ -117,6 +114,9 @@
                 </mat-list-item>
                 <mat-list-item>
                   <div class="skills-name" mat-line>{{ 'Jenkins' }}</div>
+                </mat-list-item>
+                <mat-list-item>
+                  <div class="skills-name" mat-line>{{ 'Microsoft Azure' }}</div>
                 </mat-list-item>
               </mat-list>
             </div>
@@ -131,10 +131,10 @@
             <div class="skills-list column">
               <mat-list>
                 <mat-list-item>
-                  <div class="skills-name" mat-line>{{ 'Polish - native' }}</div>
+                  <div class="skills-name" mat-line>{{ 'Polish - Native' }}</div>
                 </mat-list-item>
                 <mat-list-item>
-                  <div class="skills-name" mat-line>{{ 'English - intermediate' }}</div>
+                  <div class="skills-name" mat-line>{{ 'English - Intermediate' }}</div>
                 </mat-list-item>
                 <mat-list-item>
                   <div class="skills-name" mat-line>{{ 'Project Management' }}</div>

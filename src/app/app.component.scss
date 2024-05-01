@@ -12,17 +12,23 @@
   height: 50px;
   position: fixed;
   z-index: 2;
-  background: linear-gradient(to bottom, #fff 98%, $primary 2%);
+  background: #fff;
+  border-bottom: solid 2px $primary;
   color: $primary;
 
   #toolbar-home {
     display: flex;
     width: calc(10%);
 
-    > button mat-icon {
-      width: 28px;
-      height: 28px;
-      font-size: 28px;
+    > button {
+      width: 42px;
+      height: 42px;
+
+      mat-icon {
+        width: 26px;
+        height: 26px;
+        font-size: 26px;
+      }
     }
   }
 
@@ -31,12 +37,20 @@
     display: flex;
     column-gap: 30px;
     justify-content: flex-end;
+    align-items: center;
     margin-left: 24px;
 
     > button {
       width: auto;
       font-family: 'Open Sans', sans-serif;
       font-size: 16px;
+      border-radius: 16px;
+    }
+
+    #contact-button {
+      width: 96px;
+      height: 42px;
+      letter-spacing: var(--mdc-text-button-label-text-tracking);
     }
   }
 }
@@ -218,9 +232,9 @@
       margin: 0 24px 0 24px;
 
       > mat-icon {
-        width: 56px;
-        height: 56px;
-        font-size: 56px;
+        width: 72px;
+        height: 72px;
+        font-size: 72px;
       }
 
       > mat-icon:before {
@@ -562,6 +576,10 @@
     background: linear-gradient(to bottom, $primary 30%, #fff 30%) !important;
   }
 
+  #toolbar {
+    padding: 0 4px;
+  }
+
   #toolbar-home {
     display: none !important;
   }
@@ -571,6 +589,15 @@
     margin-left: 0 !important;
     justify-content: space-evenly !important;
     column-gap: 4px !important;
+
+    > button {
+      font-size: 14px !important;
+    }
+
+    #contact-button {
+      width: 80px !important;
+      height: 36px !important;
+    }
   }
 
   #title-text {
