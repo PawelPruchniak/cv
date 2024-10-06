@@ -131,7 +131,7 @@
     height: auto;
     width: calc(80%);
     margin-top: 32px;
-    padding: 36px 0 32px 0;
+    padding: 32px 0 32px 0;
     z-index: 1;
 
     #skills-content {
@@ -325,7 +325,7 @@
     height: auto;
     width: calc(50%);
     margin-top: 32px;
-    padding: 36px 0 32px 0;
+    padding: 24px 0 24px 0;
     z-index: 1;
 
     #education-content {
@@ -461,9 +461,16 @@
   padding: 0 32px;
 
   .copyright {
+    display: inline-flex;
+    align-items: center;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+
+    .copyright-icon {
+      font-size: 16px;
+      margin-right: 4px;
+    }
   }
 }
 
