@@ -1,8 +1,8 @@
 <div class="cv-app" xmlns="http://www.w3.org/1999/html">
   <mat-toolbar id="toolbar">
     <div id="toolbar-home">
-      <button (click)="onClickScroll('title')" mat-fab color="primary">
-        <mat-icon>home</mat-icon>
+      <button (click)="onClickScroll('title')" mat-icon-button color="primary" class="d-flex align-items-center">
+        <mat-icon fontIcon="home"></mat-icon>
       </button>
     </div>
     <div id="toolbar-list">
@@ -21,7 +21,7 @@
           <strong>Education</strong>
         </span>
       </button>
-      <button (click)="onClickScroll('contact')" mat-fab color="primary" id="contact-button">
+      <button (click)="onClickScroll('contact')" mat-flat-button color="primary" id="contact-button">
         <span>
           <strong>Contact</strong>
         </span>
