@@ -13,6 +13,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { NgOptimizedImage } from '@angular/common';
 import { MatLineModule } from '@angular/material/core';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatSlideToggle } from '@angular/material/slide-toggle';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,6 +30,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     ScrollingModule,
     NgOptimizedImage,
     MatLineModule,
+    MatSlideToggle,
+    FormsModule,
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],

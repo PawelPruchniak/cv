@@ -1,20 +1,27 @@
 @import '../variables.scss';
+@import '../theme.scss';
 
 // todo: maybe one day use "Urbanist" font
+
+.mat-app-background {
+  background: var(--background) !important;
+  color: var(--primary);
+}
 
 .cv-app {
   height: 100%;
   line-height: 1;
-  background: #fff;
+  background: var(--primary);
+  color: var(--text-color);
 }
 
 #toolbar {
   height: 50px;
   position: fixed;
   z-index: 2;
-  background: #fff;
-  border-bottom: solid 2px $primary;
-  color: $primary;
+  background: var(--background);
+  border-bottom: solid 2px var(--primary);
+  color: var(--primary);
 
   #toolbar-home {
     display: flex;
@@ -59,7 +66,7 @@
 
   min-height: 400px;
   height: auto;
-  background-color: #fff;
+  background-color: var(--background);
   padding: 100px 8px 32px 8px;
 
   #title-text {
@@ -71,7 +78,7 @@
     line-height: 1;
 
     #title-text-1 {
-      color: black;
+      color: var(--card-body-text-color);
       font-family: 'Open Sans', sans-serif;
       font-size: 20px;
       letter-spacing: normal;
@@ -79,7 +86,7 @@
 
     #title-text-2 {
       margin-top: 8px;
-      color: $primary;
+      color: var(--primary);
       font-size: 66px;
       font-family: 'Baloo Paaji', cursive;
       letter-spacing: -2px;
@@ -112,7 +119,7 @@
 #skills {
   min-height: 860px;
   height: auto;
-  background: linear-gradient(to bottom, $primary 40%, #fff 40%);
+  background: linear-gradient(to bottom, var(--primary) 40%, var(--background) 40%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,7 +129,7 @@
     padding-top: 80px;
     font-size: 44px;
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    color: var(--background);
     text-align: center;
     z-index: 1;
   }
@@ -155,7 +162,7 @@
 
     .skills-icon {
       margin-bottom: 12px;
-      color: $primary;
+      color: var(--primary);
 
       > mat-icon {
         width: 50px;
@@ -192,7 +199,7 @@
     }
 
     .time-info {
-      color: grey;
+      color: #808080;
       font-size: 14px;
       font-family: 'Open Sans', sans-serif;
     }
@@ -202,7 +209,7 @@
 #experience {
   min-height: 900px;
   height: auto;
-  background: #fff;
+  background: var(--background);
 
   .experience-header {
     height: 100%;
@@ -210,7 +217,7 @@
     margin: auto;
     z-index: 1;
     position: sticky;
-    background: #fff;
+    background: var(--background);
   }
 
   > mat-divider {
@@ -219,13 +226,13 @@
 
   #experience-body {
     display: flex;
-    background: linear-gradient(to bottom, #fff 35%, $primary 35% 65%, #fff 65%);
+    background: linear-gradient(to bottom, var(--background) 35%, var(--primary) 35% 65%, var(--background) 65%);
     justify-content: center;
 
     .experience-arrow {
       display: flex;
       align-items: center;
-      color: #fff;
+      color: var(--background);
       margin: 0 24px 0 24px;
 
       > mat-icon {
@@ -284,7 +291,7 @@
 
       .experience-position {
         margin-bottom: 24px;
-        color: #3949ab;
+        color: var(--primary);
       }
 
       .experience-title {
@@ -297,7 +304,6 @@
           sans-serif;
         line-height: 1.7 !important;
         margin-top: 4px;
-        color: #000000;
       }
     }
   }
@@ -306,7 +312,7 @@
 #education {
   min-height: 540px;
   height: auto;
-  background: linear-gradient(to bottom, $primary 50%, #fff 50%);
+  background: linear-gradient(to bottom, var(--primary) 50%, var(--background) 50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,7 +322,7 @@
     padding-top: 80px;
     font-size: 44px;
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    color: var(--background);
     text-align: center;
     z-index: 1;
   }
@@ -332,6 +338,10 @@
       display: flex;
       justify-content: center;
       font-family: 'Open Sans', sans-serif;
+
+      .education-card-logo {
+        margin-right: 16px;
+      }
 
       #education-card-title {
         display: flex;
@@ -359,7 +369,7 @@
 #contact {
   min-height: 360px;
   height: auto;
-  background: #fff;
+  background: var(--background);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -369,7 +379,7 @@
     padding-top: 80px;
     font-size: 28px;
     font-family: 'Open Sans', sans-serif;
-    color: $primary;
+    color: var(--primary);
     text-align: center;
   }
 
@@ -409,7 +419,7 @@
 
     .contact-icon {
       margin-bottom: 8px;
-      color: $primary;
+      color: var(--primary);
 
       > mat-icon {
         width: 50px;
@@ -429,22 +439,22 @@
   padding-top: 76px;
   font-size: 44px;
   font-family: 'Open Sans', sans-serif;
-  color: $primary;
+  color: var(--primary);
   text-align: center;
   z-index: 1;
-  background: #fff;
+  background: var(--background);
   margin-top: 4px;
 }
 
 .divider-blue {
   width: 30%;
-  background: $primary;
+  background: var(--primary);
   margin-top: 4px;
 }
 
-.divider-white {
+.divider-background {
   width: 30%;
-  background: white;
+  background: var(--background);
   margin-top: 4px;
 }
 
@@ -454,9 +464,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: #fff;
-  border-top: 1px solid $primary;
-  color: $primary;
+  background: var(--background);
+  border-top: 1px solid var(--primary);
+  color: var(--primary);
   margin-top: 16px;
   padding: 0 32px;
 
@@ -576,7 +586,7 @@
 
 @media screen and (max-width: 600px) {
   #skills {
-    background: linear-gradient(to bottom, $primary 30%, #fff 30%) !important;
+    background: linear-gradient(to bottom, var(--primary) 30%, #303030 30%) !important;
   }
 
   #toolbar {
@@ -612,7 +622,7 @@
     width: 50% !important;
   }
 
-  .divider-white {
+  .divider-background {
     width: 50% !important;
   }
 }

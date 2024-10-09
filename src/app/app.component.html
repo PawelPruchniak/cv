@@ -1,4 +1,8 @@
-<div class="cv-app" xmlns="http://www.w3.org/1999/html">
+<div
+  class="mat-app-background cv-app"
+  [ngClass]="isDarkModeEnabled ? 'dark-mode' : 'light-mode'"
+  xmlns="http://www.w3.org/1999/html"
+>
   <mat-toolbar id="toolbar">
     <div id="toolbar-home">
       <button (click)="onClickScroll('title')" mat-icon-button color="primary" class="d-flex align-items-center">
@@ -26,6 +30,14 @@
           <strong>Contact</strong>
         </span>
       </button>
+      <div>
+        <mat-slide-toggle
+          [ngModel]="isDarkModeEnabled"
+          (ngModelChange)="change()"
+          #themeModeSwitch
+          color="primary"
+        ></mat-slide-toggle>
+      </div>
     </div>
   </mat-toolbar>
   <div id="title">
@@ -46,13 +58,13 @@
         <strong>Skills</strong>
       </span>
     </div>
-    <mat-divider class="divider-white"></mat-divider>
+    <mat-divider class="divider-background"></mat-divider>
     <mat-card id="skills-card">
       <mat-card-content>
         <mat-card-content id="skills-content">
           <div id="skills-core">
             <div class="skills-icon">
-              <mat-icon>computer</mat-icon>
+              <mat-icon color="primary">computer</mat-icon>
             </div>
             <span class="title">
               <strong>Core</strong>
@@ -80,7 +92,7 @@
           </div>
           <div id="skills-tools">
             <div class="skills-icon">
-              <mat-icon>category</mat-icon>
+              <mat-icon color="primary">category</mat-icon>
             </div>
             <span class="title">
               <strong>Frameworks & Tools</strong>
@@ -134,7 +146,7 @@
           </div>
           <div id="skills-soft">
             <div class="skills-icon">
-              <mat-icon>group</mat-icon>
+              <mat-icon color="primary">group</mat-icon>
             </div>
             <span class="title">
               <strong>Soft skills</strong>
@@ -260,7 +272,7 @@
         <strong>Education</strong>
       </span>
     </div>
-    <mat-divider class="divider-white" />
+    <mat-divider class="divider-background" />
     <mat-card id="education-card">
       <mat-card-content id="education-content">
         <div class="education-card-logo">

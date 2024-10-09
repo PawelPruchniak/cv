@@ -4,23 +4,58 @@
 @include mat.core();
 
 // Define a theme.
-$primary: mat.define-palette(mat.$indigo-palette, 600, 400, 700);
+$primary-light: mat.define-palette(mat.$indigo-palette, 600, 400, 700);
+$primary-dark: mat.define-palette(mat.$cyan-palette, 200, 400, 700);
 $accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 $warn: mat.define-palette(mat.$red-palette, 500, 400, 700);
 
-$theme: mat.define-light-theme(
+$light-theme: mat.define-light-theme(
   (
     color: (
-      primary: $primary,
+      primary: $primary-light,
       accent: $accent,
       warn: $warn,
     ),
     typography: mat.define-typography-config(),
     density: 0,
+    use-system-variables: true,
+  )
+);
+
+$dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $primary-dark,
+      accent: $accent,
+      warn: $warn,
+    ),
+    typography: mat.define-typography-config(),
+    density: 0.5,
   )
 );
 
 // Include all theme styles for the components.
-@include mat.all-component-themes($theme);
+@include mat.all-component-themes($light-theme);
+@include mat.typography-hierarchy($light-theme);
 
-@include mat.typography-hierarchy($theme);
+.light-mode {
+  @include mat.all-component-themes($light-theme);
+  @include mat.typography-hierarchy($light-theme);
+  --primary: #3949ab;
+  --background: #fff;
+  --text-color: #000;
+  --card-body-text-color: #000;
+  --mdc-switch-unselected-focus-handle-color: var(--primary) !important;
+  --mdc-switch-unselected-handle-color: var(--primary) !important;
+  --mdc-switch-unselected-hover-handle-color: var(--primary) !important;
+  --mdc-switch-unselected-pressed-handle-color: var(--primary) !important;
+}
+
+.dark-mode {
+  @include mat.all-component-colors($dark-theme);
+  @include mat.typography-hierarchy($dark-theme);
+  --primary: #7fdce8;
+  --background: #303030ff;
+  --text-color: #fff;
+  --card-body-text-color: var(--mat-card-subtitle-text-color);
+}
