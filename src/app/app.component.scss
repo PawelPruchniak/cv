@@ -586,7 +586,7 @@
 
 @media screen and (max-width: 600px) {
   #skills {
-    background: linear-gradient(to bottom, var(--primary) 30%, #303030 30%) !important;
+    background: linear-gradient(to bottom, var(--primary) 30%, var(--background) 30%) !important;
   }
 
   #toolbar {
